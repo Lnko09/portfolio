@@ -4,90 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lurline Nkonde | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="bg-white text-gray-800 font-inter antialiased">
-
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Lurline Nkonde</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="btn">Contact</a>
-      </nav>
+<body>
+  <header>
+    <div class="container">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/163/925/original/IMG-20250211-WA0025_1_.jpg?1745429423" alt="Lurline Nkonde" class="profile-pic"/>
+      <div>
+        <h1>Lurline Nkonde</h1>
+        <p>Front-End Web Developer | Creative Thinker | Law Graduate</p>
+        <button id="mode-toggle">🌙 Toggle Dark Mode</button>
+      </div>
     </div>
   </header>
 
-  <section class="text-center py-16 bg-gray-100">
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/163/925/original/IMG-20250211-WA0025_1_.jpg?1745429423" 
-         alt="Lurline Nkonde" class="w-40 h-40 mx-auto rounded-full shadow-lg mb-4" />
-    <h2 class="text-4xl font-bold mb-2">Lurline Nkonde</h2>
-    <p class="text-xl text-sky-700 font-semibold">Junior Front-end Developer</p>
-    <p class="mt-4 max-w-xl mx-auto text-gray-600">
-      I'm passionate about crafting clean and user-friendly web interfaces. I love building digital products that make life easier.
-    </p>
-  </section>
-
-  <main class="container mx-auto px-6 py-12">
-    <section id="about" class="mb-16">
-      <h3 class="section-title">About Me</h3>
-      <p class="text-lg leading-relaxed">
-        Hi! I'm Lurline, a Junior Front-end Developer with a background in Law. I currently work at Concentrix and enjoy coding, cooking, and basketball.
-        I’m always eager to grow and apply my skills in meaningful ways—especially in collaborative, creative environments.
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a law graduate turned web developer with a passion for creating beautiful, responsive websites.
+        I enjoy blending design with functionality to build user-friendly digital experiences. Skilled in HTML, CSS, and JavaScript.
       </p>
     </section>
 
-    <section id="skills" class="mb-16">
-      <h3 class="section-title">Skills & Tools</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <ul class="list-disc list-inside">
-          <li>HTML5, CSS3, JavaScript (ES6+)</li>
-          <li>React.js, Tailwind CSS</li>
-          <li>Git & GitHub</li>
-          <li>Responsive Web Design</li>
-        </ul>
-        <ul class="list-disc list-inside">
-          <li>VS Code, Git</li>
-          <li>Netlify</li>
-          <li>MacOS</li>
-          <li>Grammarly</li>
-          <li>Problem-solving & Collaboration</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="mb-16">
-      <h3 class="section-title">Projects</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="card">
-          <h4 class="text-lg font-semibold mb-2">Travel Zambia Website</h4>
-          <p class="text-gray-700">A responsive travel website featuring popular Zambian destinations. Hosted on Netlify.</p>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/165/472/original/Screenshot_2025-05-10_185309.png?1746924804" alt="Travel Zambia">
+          <h3>Explore Zambia</h3>
+          <p>A responsive travel website showcasing the beauty of Zambia. Includes embedded Instagram and modern design.</p>
+          <a href="https://explorezambia.netlify.app" target="_blank">Visit Site</a>
         </div>
-        <div class="card">
-          <h4 class="text-lg font-semibold mb-2">World Clock App</h4>
-          <p class="text-gray-700">Built using JavaScript. Displays time across multiple global cities in real-time.</p>
+        <div class="project-card">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/165/471/original/Screenshot_2025-05-10_184944.png?1746924607" alt="World Clock App">
+          <h3>World Clock App</h3>
+          <p>A JavaScript-powered world clock showing multiple time zones in real time with clean design.</p>
+          <a href="https://worldclock0910.netlify.app" target="_blank">Visit Site</a>
         </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h3 class="section-title">Contact Me</h3>
-      <p class="text-center text-lg mb-6">Feel free to reach out for collaborations or freelance opportunities!</p>
-      <div class="text-center space-x-4">
-        <a href="mailto:lurlinenkonde@gmail.com" class="btn">Email Me</a>
-        <a href="https://github.com/Lnko09" target="_blank" class="btn bg-gray-700">GitHub</a>
       </div>
     </section>
   </main>
 
-  <footer class="text-center py-6 text-sm text-gray-500">
-    &copy; <span id="year"></span> Lurline Nkonde. Built with ❤️.
-    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <footer>
+    <p>© 2025 Lurline Nkonde. Built with ❤️</p>
   </footer>
 
+  <script>
+    const toggle = document.getElementById("mode-toggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
 </body>
 </html>
