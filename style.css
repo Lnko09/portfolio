@@ -1,19 +1,134 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-link {
-  @apply text-gray-700 hover:text-sky-600 transition;
+.dark {
+  background-color: #121212;
+  color: #eaeaea;
 }
 
-.btn {
-  @apply inline-block bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition;
+header {
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
 }
 
-.section-title {
-  @apply text-2xl font-bold text-sky-700 mb-6 text-center;
+.dark header {
+  background-color: #1e1e1e;
 }
 
-.card {
-  @apply p-6 border rounded-lg shadow-sm bg-white;
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #888;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.about,
+.projects {
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.dark .project-card {
+  background-color: #2b2b2b;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+  margin-bottom: 0.3rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #0044aa;
+}
+
+#mode-toggle {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.dark #mode-toggle {
+  background: #ddd;
+  color: #222;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  color: #777;
 }
