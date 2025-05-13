@@ -9,7 +9,7 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  background-color:#EDB985
+  background-color: #fed9f2;
   color: #2c2c2c;
   transition: all 0.3s ease-in-out;
   font-size: 15px;
@@ -29,14 +29,8 @@ header .container {
   text-align: center;
 }
 
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  margin-bottom: 1rem;
-}
+width: 140px;
+  height: 140px;
 
 header .container > div {
   max-width: 600px;
@@ -188,3 +182,4 @@ textarea {
     margin: 1rem auto 0;
   }
 }
+
