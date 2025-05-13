@@ -29,8 +29,14 @@ header .container {
   text-align: center;
 }
 
-width: 140px;
-  height: 140px;
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin: 1rem auto 0;
+}
 
 header .container > div {
   max-width: 600px;
