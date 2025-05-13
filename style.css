@@ -90,9 +90,9 @@ main {
 }
 
 .profile-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
