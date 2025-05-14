@@ -1,3 +1,4 @@
+/* Neutral Redesign CSS for Lurline's Portfolio */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 * {
@@ -9,7 +10,7 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  background-color: #b87c63;
+  background-color: #f5f5dc; /* Beige background */
   color: #2c2c2c;
   transition: all 0.3s ease-in-out;
   font-size: 15px;
@@ -29,14 +30,8 @@ header .container {
   text-align: center;
 }
 
-.profile-pic {
-  width: 138px;
-  height: 138px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  margin: 1rem auto 0;
-}
+width: 140px;
+  height: 140px;
 
 header .container > div {
   max-width: 600px;
@@ -173,6 +168,7 @@ textarea {
   border-color: #444;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
@@ -188,4 +184,3 @@ textarea {
     margin: 1rem auto 0;
   }
 }
-
