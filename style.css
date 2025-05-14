@@ -31,8 +31,8 @@ header .container {
 }
 
 .profile-pic {
-  width: 138px;
-  height: 138px;
+  width: 139px;
+  height: 139px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -174,8 +174,35 @@ textarea {
   color: #eee;
   border-color: #444;
 }
+.decor-line {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #cccccc;
+  top: 20px;
+  left: 20px;
+}
 
-/* Responsive */
+.decor-box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #cccccc;
+  top: 100px;
+  right: 40px;
+}
+
+.decor-dots {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(#ccc 1px, transparent 1px);
+  background-size: 10px 10px;
+  top: 180px;
+  left: 60px;
+  opacity: 0.5;
+}
+
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
