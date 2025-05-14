@@ -31,13 +31,14 @@ header .container {
 }
 
 .profile-pic {
-  width: 135px;
-  height: 137px;
+  width: 138px;
+  height: 138px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   margin: 1rem auto 0;
 }
+
 
 header .container > div {
   max-width: 600px;
@@ -190,3 +191,5 @@ textarea {
     margin: 1rem auto 0;
   }
 }
+
+ 
